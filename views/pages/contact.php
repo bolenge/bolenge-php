@@ -1,0 +1,1 @@
+<h1>Bienvenue à la page de contact</h1>

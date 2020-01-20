@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(REQUEST_FILENAME) %{REQUEST_FILENAME} [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*) index.php/$1 [L]

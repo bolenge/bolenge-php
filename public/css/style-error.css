@@ -1,0 +1,11 @@
+.container-error {
+    text-align: center;
+}
+.container-error-404 {
+    margin-top: 13%;
+}
+.container-error-404 h1 {
+    font-family: Segoe UI Light, Century Gothic, sans-serif;
+    font-weight: normal;
+    font-size: 3.3em;
+}

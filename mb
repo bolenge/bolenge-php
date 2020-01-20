@@ -1,0 +1,26 @@
+#!/usr/bin/env php
+<?php
+	define('MB_START', microtime(true));
+	define('MB_START_ON', substr(ceil(MB_START) / 10000000000, 0, 6).' sec');
+	define('FRAMEWORK_NAME', "Bolenge-php Framework");
+	define('FRAMEWORK_VERSION', "0.0.1");
+	define('DEFAULT_SERVER_PORT', 3000);
+
+	/*
+	|--------------------------------------------------------------------------
+	| Include files
+	|--------------------------------------------------------------------------
+	|
+	| Ce fichier inclue le fichier autoload de composer des gestion automatique
+	| des classes et d'autres fichiers nécessaires pour l'application 
+	|
+	*/
+	require './bootstrap/include.php';
+
+	define('BASE_URL', dirname(__FILE__));
+	define('PROTOTYPE_FILES_PATH', BASE_URL.DS.'core'.DS.'Console'.DS.'prototypes');
+
+	use Core\Console\Kernel;
+
+	(new Kernel)->launch();
+
